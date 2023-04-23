@@ -4,37 +4,10 @@
     <title>Read Text File</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script>
-      window.onload = function () {
-        // Define the text file to be read
-        var file = "example.txt";
-
-        // Create a new XMLHttpRequest object
-        var xhr = new XMLHttpRequest();
-
-        // Set the responseType to "text"
-        xhr.responseType = "text";
-
-        // Set up a callback function for when the file is loaded
-        xhr.onload = function () {
-          if (xhr.status === 200) {
-            // Get the text from the response
-            var text = xhr.response;
-
-            // Set the text as the content of the <pre> element
-            document.getElementById("text").textContent = text;
-          }
-        };
-
-        // Open the file for reading
-        xhr.open("GET", file, true);
-
-        // Send the request
-        xhr.send();
-      };
-    </script>
   </head>
-  <body>
-    <pre id="text"></pre>
+  <body onload="loadJSON()">
+    <p id="content"></p>
+
+    <script src="p.js"></script>
   </body>
 </html>
