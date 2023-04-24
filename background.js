@@ -21,7 +21,9 @@ chrome.webRequest.onBeforeRequest.addListener(
       url.includes("brazzers") ||
       url.includes("nublies") ||
       url.includes("xvideos") ||
-      url.includes("face")
+      url.includes("pirate") ||
+      url.includes("proxybay") ||
+      url.includes("pirate")
     ) {
       return { cancel: true };
     }
