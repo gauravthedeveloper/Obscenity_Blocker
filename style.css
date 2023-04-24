@@ -1,0 +1,12 @@
+html {
+  background-color: rgb(21, 42, 75);
+  color: aliceblue;
+}
+body {
+  width: 500px;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: beige;
+}
