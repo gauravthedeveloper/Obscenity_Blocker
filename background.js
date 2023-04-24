@@ -4,7 +4,6 @@ chrome.webRequest.onBeforeRequest.addListener(
     if (
       url.includes("porn") ||
       url.includes("sex") ||
-      url.includes("adult") ||
       url.includes("nude") ||
       url.includes("xxx") ||
       url.includes("erotic") ||
@@ -17,8 +16,12 @@ chrome.webRequest.onBeforeRequest.addListener(
       url.includes("brazzers") ||
       url.includes("nublies") ||
       url.includes("xvideos") ||
-      url.includes("pirate") ||
-      url.includes("proxybay")
+      url.includes("adult") ||
+      url.includes("hentai") ||
+      url.includes("brazzers") ||
+      url.includes("nublies") ||
+      url.includes("xvideos") ||
+      url.includes("face")
     ) {
       return { cancel: true };
     }
