@@ -1,12 +1,36 @@
-html {
+/* html {
   background-color: rgb(21, 42, 75);
   color: aliceblue;
 }
-body {
-  width: 500px;
-}
+
 a {
   text-decoration: none;
   font-weight: 400;
   color: beige;
+} */
+body {
+  width: 500px;
+}
+html {
+  background-color: rgb(16 39 42);
+  color: aliceblue;
+}
+a {
+  text-decoration: none; /*doesn't show underline while hovering*/
+  font-weight: 400;
+  color: beige;
+}
+a:hover {
+  color: rgba(156, 156, 218, 0.952);
+  background-color: rgb(43, 21, 21);
+}
+a:visited {
+  color: rgba(218, 132, 66, 0.781);
+}
+.container {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
